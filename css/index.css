@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to right, #128655, #20EC96);
+    background-image: linear-gradient(to right, #033721, #20EC96);
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -28,8 +28,18 @@ nav{
     padding: 0 20px;
 }
 
+.left-hd{
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
 .logo{
-    width: 40px;
+    width: 50px;
     height: 40px;
 }
 
@@ -77,11 +87,17 @@ main{
 footer{
     background-color: #033721;
     color: white;
-    padding: 10px 0;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
     width: 100%;
     height: fit-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+}
+
+footer span a{
+    text-decoration: none;
+    color: white;
 }
