@@ -38,6 +38,10 @@ header a{
     text-decoration: none;
 }
 
+header a:hover{
+    color: red;
+}
+
 .logo{
     width: 50px;
     height: 40px;
@@ -92,4 +96,8 @@ footer{
 footer span a{
     text-decoration: none;
     color: white;
+}
+
+footer span a:hover{
+    color: #20EC96;
 }
