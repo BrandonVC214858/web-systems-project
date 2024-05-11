@@ -59,10 +59,37 @@ video{
 }
 
 main{
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+}
+
+aside{
+    width: 30%;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside header{
+    border-radius: 10px 10px 0 0 ;
+    display: flex;
+    justify-content: center;
+}
+
+aside ul{
+    list-style: decimal;
+}
+ul li{
+    margin-top: 10px;
 }
 
 .areas{
