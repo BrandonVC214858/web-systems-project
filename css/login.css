@@ -12,7 +12,7 @@ body{
 
 header{
     background-image: linear-gradient(to right, #033721, #20EC96);
-    color: white;
+    color: #f0f0f0;
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -38,25 +38,56 @@ header a{
     text-decoration: none;
 }
 
-header a:hover{
-    color: red;
-}
-
 .logo{
     width: 50px;
     height: 40px;
 }
 
-.Fondo{
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    left: 150px;
-    top: 150px;
-    background-color: #d0d1d1;
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.Sesion{
-    height: 90px;
-    width: 500px;
-    background-image: linear-gradient(to right, #033721, #20EC96);
+
+.container h2 {
+    color: black; 
+    text-align: center;
+    margin-bottom: 20px; 
+    padding: 10px 10px; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #45a049;
 }
