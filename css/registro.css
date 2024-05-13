@@ -47,7 +47,7 @@ header a{
     background: #d1d1d1; /*Fondo Principal*/
     padding: 100px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 10px;
     font-family: 'calibri';
     color: #ffffff;
 }
@@ -70,7 +70,6 @@ header a{
 }
 
 .form-register p{
-    height: 4px;
     text-align: center;
     font-size: 18px;
 }
@@ -86,14 +85,8 @@ header a{
     border: none;
     padding: 12px;
     color: white;
-    margin: 0 0;
+    margin: 16px 0;
     font-size: 16px;
-}
-.form-register a:hover{
-    color: #1fc52d;
-}
-.botons:hover{
-    background-color: #00b327;
 }
 /*Inicio del footer*/
 footer{
