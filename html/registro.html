@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/registro.css">
-    <title>Login</title>
+    <title>Registro</title>
 </head>
 <body>
     <header>
@@ -15,19 +15,19 @@
             </div>
         </nav>
     </header>
-    <form>
+    <form id="miForm" action="http://127.0.0.1:3000/web-systems-project/html/registro.html" method="post">
         <h5>Registro</h5>
         <div class="login-container">
-                <div class="form-group">
-                    <label for="username">Nombre de usuario</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" required>
-                    <p><a href="login.html">Ya cuento con cuenta</a></p>
-                </div>
-                <button type="submit">Registrarse</button>
+            <div class="form-group">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <p><a href="login.html">Ya cuento con cuenta</a></p>
+            </div>
+            <button type="submit">Registrarse</button>
         </div>
     </form>
     <footer>
@@ -42,4 +42,5 @@
         </span>
     </footer>
 </body>
+<script src="../js/localStorage/sesion.js"></script>
 </html>
