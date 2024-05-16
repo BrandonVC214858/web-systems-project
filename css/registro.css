@@ -10,13 +10,32 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to right, #033721, #20EC96);
     color: #f0f0f0;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     height: fit-content;
     display: flex;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 nav{
@@ -42,51 +61,78 @@ header a{
     height: 40px;
 }
 /*Inicio del Formulario*/
-.form-register{
-    width: 400px;
-    background: #d1d1d1; /*Fondo Principal*/
-    padding: 100px;
-    margin: auto;
-    margin-top: 10px;
-    font-family: 'calibri';
-    color: #ffffff;
-}
-
-.form-register h4{
-    position: relative;
-    top: 1px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.controls{
-    width: 100%;
-    background: #ffffff;
+h5{
+    background-image: linear-gradient(to right, #033721, #20EC96);
+    color: #f0f0f0;
     padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #000000;
-}
-
-.form-register p{
     text-align: center;
-    font-size: 18px;
+    width: 724px;
+    position: relative;
+    height: 50px;
+    top: 93px;
+    font-size: 24px;
+    line-height: 50px;
 }
-
-.form-register a{
-    color: white;
-    text-decoration: none;
-}
-
-.form-register .botons{
+form{
+    color: #f0f0f0;
     width: 100%;
-    background: #1fc52d;
+    margin: -100px auto 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-container {
+    background-color: #d1cfcf;
+    padding: 10px;
+    width: 724px;
+    padding-top: 80px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 40px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 400px;
+    padding: 10px;
+    border: #ccc;
+    border-radius: 5px;
+}
+a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+button {
+    color: #fff;
     border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
     font-size: 16px;
+    display: block;
+    margin: -18px auto 0;
+}
+
+footer {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+button:hover {
+    background-color: #033721;
 }
 /*Inicio del footer*/
 footer{
@@ -100,6 +146,12 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: start;
+}
+
+footer {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 footer span a{

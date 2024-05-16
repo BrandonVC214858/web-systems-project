@@ -11,13 +11,32 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to right, #033721, #20EC96);
     color: white;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     height: fit-content;
     display: flex;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 nav{
@@ -75,7 +94,7 @@ main{
 }
 
 aside{
-    width: 30%;
+    width: fit-content;
     height: fit-content;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -132,7 +151,6 @@ ul li{
 }
 
 footer{
-    background-color: #033721;
     color: white;
     padding: 10px;
     margin: 10px;
@@ -142,6 +160,12 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: start;
+}
+
+footer {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 footer span a{
