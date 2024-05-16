@@ -42,51 +42,67 @@ header a{
     height: 40px;
 }
 /*Inicio del Formulario*/
-.form-register{
-    width: 400px;
-    background: #d1d1d1; /*Fondo Principal*/
-    padding: 100px;
-    margin: auto;
-    margin-top: 10px;
-    font-family: 'calibri';
-    color: #ffffff;
-}
-
-.form-register h4{
-    position: relative;
-    top: 1px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.controls{
-    width: 100%;
-    background: #ffffff;
+h5{
+    background-image: linear-gradient(to right, #033721, #20EC96);
+    color: #f0f0f0;
     padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #000000;
-}
-
-.form-register p{
     text-align: center;
-    font-size: 18px;
+    width: 700px;
+    position: relative;
+    height: 50px;
+    top: 93px;
+    font-size: 24px;
+    line-height: 50px;
 }
-
-.form-register a{
-    color: white;
-    text-decoration: none;
-}
-
-.form-register .botons{
+form{
+    color: #f0f0f0;
     width: 100%;
-    background: #1fc52d;
+    margin: -100px auto 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-container {
+    background-color: #d1cfcf;
+    padding: 150px;
+    height: 150px;
+}
+.form-group {
+    margin-bottom: 40px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 400px;
+    padding: 10px;
+    border: #ccc;
+    border-radius: 5px;
+}
+a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+button {
+    background-color: #20EC96;
+    color: #fff;
     border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
     font-size: 16px;
+    display: block;
+    margin: -18px auto 0;
+}
+
+button:hover {
+    background-color: #033721;
 }
 /*Inicio del footer*/
 footer{
