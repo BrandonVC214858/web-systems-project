@@ -1,18 +1,23 @@
 <?php
 require '../connection/conect_db.php';
 
-$asunto = $_POST['asunto'];
-$correo = $_POST['correo'];
-$mensaje = $_POST['mensaje'];
+$asunto = $_POST['affair'];
+$correo = $_POST['main'];
+$mensaje = $_POST['Message'];
 
-$sql = "INSERT INTO correos (asunto, correo, mensaje)
-VALUES ('Asunto del correo', 'correo@example.com', 'Este es el mensaje del correo')";
+$stmt = $conn->prepare("INSERT INTO correos (asunto, correo, mensaje) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $asunto, $correo, $mensaje);
 
-if ($conn->query($sql) === TRUE) {
-  echo "Nuevo registro creado exitosamente";
+if ($stmt->execute()) {
+    echo "New record created successfully";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $stmt->error;
 }
 
+
+$stmt->close();
 $conn->close();
+
+header('Location: ../views/correos.php');
+die();
 ?>
