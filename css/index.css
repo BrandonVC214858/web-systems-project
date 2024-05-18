@@ -51,6 +51,12 @@ nav{
     display: flex;
     align-items: center;
 }
+.right-hd{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 header a{
     color: white;
