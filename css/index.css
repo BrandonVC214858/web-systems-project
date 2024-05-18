@@ -51,6 +51,13 @@ nav{
     display: flex;
     align-items: center;
 }
+/*Menu*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
 .right-hd{
     width: 200px;
     display: flex;
