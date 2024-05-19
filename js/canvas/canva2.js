@@ -1,16 +1,29 @@
-var id_canvas = document.getElementById("canva2");
-var ctx = id_canvas.getContext("2d");
+var canvas = document.getElementById("canva2");
+var ctx = canvas.getContext("2d");
 
-var canvasWidth = 100;
-var canvasHeight = 100;
+var x = 50;
+var y = 50;
 
-var centerX = canvasWidth / 2;
-var centerY = canvasHeight / 2;
+var velocidadX = 3;
+var velocidadY = 2;
 
-var sideLength = canvasWidth / 2;
+function dibujar() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    ctx.beginPath();
+    ctx.arc(x, y, 20, 0, Math.PI * 2);
+    ctx.fillStyle = "#10E0BD";
+    ctx.fill();
+    ctx.closePath();
+    
+    x += velocidadX;
+    y += velocidadY;
 
-ctx.fillStyle = "red";
-ctx.fillRect(centerX - sideLength / 2, centerY - sideLength / 2, sideLength, sideLength);
-
-ctx.fillStyle = "white";
-ctx.fillRect(centerX - sideLength / 4, centerY - sideLength / 4, sideLength / 2, sideLength / 2);
+    if (x + velocidadX > canvas.width - 20 || x + velocidadX < 20) {
+        velocidadX = -velocidadX;
+    }
+    if (y + velocidadY > canvas.height - 20 || y + velocidadY < 20) {
+        velocidadY = -velocidadY;
+    }
+}
+setInterval(dibujar, 10);
